@@ -20,31 +20,31 @@
             <div>
                 <div>
                     <label for="name">FIRST NAME</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required autofocus>
                 </div>
                 <div>
                     <label for="surname">LAST NAME</label>
-                    <input type="text" id="surname" name="surname">
+                    <input type="text" id="surname" name="surname" required>
                 </div>
             </div>
             <div>
                 <div>
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div>
                     <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="tel" id="phoneNumber" name="phone_number">
+                    <input type="tel" id="phoneNumber" name="phone_number" required minlength="7" maxlength="15">
                 </div>
             </div>
             <div>
                 <div>
                     <label for="passWord">PASSWORD</label>
-                    <input type="password" id="passWord" name="pass_word">
+                    <input type="password" id="passWord" name="pass_word" required>
                 </div>
                 <div>
                     <label for="confirmPassWord">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirmPassWord" name="pass_word">
+                    <input type="password" id="confirmPassWord" name="pass_word" required>
                 </div>
             </div>
             <button type="submit">Create Account</button>
