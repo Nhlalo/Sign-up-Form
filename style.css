@@ -33,7 +33,7 @@ main{
 }
 .backgroundImage{
     position: relative;
-    min-width:max(400px, 30%);
+    min-width:max(200px, 30%);
     background-image: url(images/coding-background-9izlympnd0ovmpli.jpg);
     background-position: right;
     
@@ -54,7 +54,7 @@ main{
     max-width: 75ch;
 }
 
-span{
+.motivator{
     display: inline-block;
     font-weight: bold;
     font-size: 1.2rem;
@@ -74,6 +74,22 @@ form > div > div{
 label{
     font-size: 0.7rem;
 }
+input{
+    border: none;
+    border-radius: 5px;
+    border: 0.1px solid black;
+    padding: 5px;
+    width: 250px;
+    font-size:0.8rem;
+}
+input:not(:placeholder-shown){
+    border-color: red;
+}
+input:valid{
+    border-color: black;
+}
+
+
 button{
     padding: 8px 25px;
     border-radius: 10px;

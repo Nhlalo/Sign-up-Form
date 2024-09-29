@@ -15,36 +15,37 @@
             This is not a real onlin service! If you want to further you knowledge in web developement and acquire a job as a web developer, please complete the following form.
         </div>
         <form action="" method="post">
-            <span>Let's do this!</span>
+            <span class="motivator">Let's do this!</span>
 
             <div>
                 <div>
                     <label for="name">FIRST NAME</label>
-                    <input type="text" name="name" id="name" required autofocus>
+                    <input type="text" name="name" id="name" placeholder=" " required autofocus>
+                    
                 </div>
                 <div>
                     <label for="surname">LAST NAME</label>
-                    <input type="text" id="surname" name="surname" required>
+                    <input type="text" id="surname" name="surname" placeholder=" "  required>
                 </div>
             </div>
             <div>
                 <div>
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" placeholder=" "  pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"  required>
                 </div>
                 <div>
                     <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="tel" id="phoneNumber" name="phone_number" required minlength="7" maxlength="15">
+                    <input type="tel" id="phoneNumber" name="phone_number" placeholder=" "  required minlength="7" maxlength="15">
                 </div>
             </div>
             <div>
                 <div>
                     <label for="passWord">PASSWORD</label>
-                    <input type="password" id="passWord" name="pass_word" required>
+                    <input type="password" id="passWord" name="pass_word" placeholder=" "  required>
                 </div>
                 <div>
                     <label for="confirmPassWord">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirmPassWord" name="pass_word" required>
+                    <input type="password" id="confirmPassWord" name="pass_word" placeholder=" "  required>
                 </div>
             </div>
             <button type="submit">Create Account</button>
