@@ -82,6 +82,7 @@ input{
     width: 250px;
     font-size:0.8rem;
 }
+/*This to ensure that the border colours of the input do not change to the border color of an invalid state when the input is empty*/
 input:not(:placeholder-shown){
     border-color: red;
 }
@@ -99,7 +100,7 @@ button{
     font-size:0.9rem;
 }
 form > :last-child{
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     margin-top: 15px;
     gap: 10px;
     

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="backgroundImage">
@@ -16,16 +17,16 @@
         </div>
         <form action="" method="post">
             <span class="motivator">Let's do this!</span>
-
             <div>
+                <!--The empty placeholder works in hand with the :not(:placeholder-shown) to ensure that the border colours of the input do not change to the border color of an invalid state when the input is empty-->
                 <div>
                     <label for="name">FIRST NAME</label>
-                    <input type="text" name="name" id="name" placeholder=" " required autofocus>
+                    <input type="text" name="name" id="name" placeholder=" " required autofocus pattern="^[^\s]+.*$">
                     
                 </div>
                 <div>
                     <label for="surname">LAST NAME</label>
-                    <input type="text" id="surname" name="surname" placeholder=" "  required>
+                    <input type="text" id="surname" name="surname" placeholder=" " pattern="^[^\s]+.*$"   required>
                 </div>
             </div>
             <div>
@@ -35,17 +36,18 @@
                 </div>
                 <div>
                     <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="tel" id="phoneNumber" name="phone_number" placeholder=" "  required minlength="7" maxlength="15">
+                    <input type="tel" id="phoneNumber" name="phone_number" placeholder=" " pattern="^[^\s]+.*$" required minlength="7" maxlength="15">
                 </div>
             </div>
             <div>
                 <div>
-                    <label for="passWord">PASSWORD</label>
-                    <input type="password" id="passWord" name="pass_word" placeholder=" "  required>
+                    <!--The password has at least eight characters, one uppercase letter, one lowercase letter, one digit, and one special character-->
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="pass_word" placeholder=" "  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" >
                 </div>
                 <div>
-                    <label for="confirmPassWord">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirmPassWord" name="pass_word" placeholder=" "  required>
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPassword" name="pass_word" placeholder=" "  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}">
                 </div>
             </div>
             <button type="submit">Create Account</button>
