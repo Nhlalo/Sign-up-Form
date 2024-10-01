@@ -20,13 +20,13 @@
             <div>
                 <!--The empty placeholder works in hand with the :not(:placeholder-shown) to ensure that the border colours of the input do not change to the border color of an invalid state when the input is empty-->
                 <div>
-                    <label for="name">FIRST NAME</label>
+                    <label for="name">FIRST NAME<span aria-label="required" class="required">*</span></label>
                     <input type="text" name="name" id="name" placeholder=" " required autofocus pattern="^[^\s]+.*$">
                     
                 </div>
                 <div>
-                    <label for="surname">LAST NAME</label>
-                    <input type="text" id="surname" name="surname" placeholder=" " pattern="^[^\s]+.*$"   required>
+                    <label for="surname">LAST NAME<span aria-label="required" class="required">*</span></label>
+                    <input type="text" id="surname" name="surname" placeholder=" " pattern="^[^\s]+.*$"    required>
                 </div>
             </div>
             <div>
@@ -35,18 +35,18 @@
                     <input type="email" name="email" id="email" placeholder=" "  pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"  required>
                 </div>
                 <div>
-                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <label for="phoneNumber">PHONE NUMBER<span aria-label="required" class="required">*</span></label>
                     <input type="tel" id="phoneNumber" name="phone_number" placeholder=" " pattern="^[^\s]+.*$" required minlength="7" maxlength="15">
                 </div>
             </div>
             <div>
                 <div>
                     <!--The password has at least eight characters, one uppercase letter, one lowercase letter, one digit, and one special character-->
-                    <label for="password">PASSWORD</label>
+                    <label for="password">PASSWORD<span aria-label="required" class="required">*</span></label>
                     <input type="password" id="password" name="pass_word" placeholder=" "  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" >
                 </div>
                 <div>
-                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <label for="confirmPassword">CONFIRM PASSWORD<span aria-label="required" class="required">*</span></label>
                     <input type="password" id="confirmPassword" name="pass_word" placeholder=" "  required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}">
                 </div>
             </div>
